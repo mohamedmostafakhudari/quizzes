@@ -1,0 +1,21 @@
+1 -
+	"Hello"
+	50
+	
+2 -
+	101
+	
+3 -
+	20
+	NaN
+
+4 -
+	30
+	diff is not a function
+
+5 -
+	"object"
+	"number"
+	
+
+	

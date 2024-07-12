@@ -1,0 +1,57 @@
+1 -
+	void or empty or self-closed elements
+	
+2 -
+	| em |
+		is a relative css unit, it has two cases:
+		
+		a unit for font-size property:
+			It's calculated as a ratio from the parent's font-size property,
+			Ex: parent element -> font-size: 32px;
+			    current element -> font-size: 0.5em // 16px (32 * 0.5).
+			    
+		a unit for other properties:
+			It's calculated as a ratio from the current element's font-size property or if it's inherited so It will be calculated from the parent's font-size property,
+			Ex: current element -> font-size: 16px;
+					       padding-inline: 2em // 32px (16 * 2)
+					       
+					       
+	| rem |
+		is a relative css unit, and It's calculated as a ratio from the root font-size,
+		It allows easier time when you need to adjust the overall font size of your design.
+		Ex: :root -> font-size: 16px;
+		    element -> font-size: 3rem // 48px ( 16 * 3)
+		   
+	| px |
+		is an absolute css unit, It allows you to set a fixed size for elements regardless of any changes.
+		
+		
+3 -
+	<input type="submit" value="click me"> 
+		- Data and button text are always the same
+		- Cannot contain HTML content (empty element)
+	<button type="submit">Click me</button>
+		- Can have a separate value as data different from the button text
+		- Can contain HTML content (Ex: Images)
+		
+
+4 -
+	Hoisting:
+	 - It's the process of moving all the declarations to the top of their scope before executing the code
+	 
+	 Event Loop:
+	 - It is a runtime model and a mechanism that allows JavaScript to handle asynchronous events in a non-blocking way. like fetching data, responding to user interactions, timers and intervals.
+	 
+	 
+5 -
+	for .. of
+		
+		Loop over values of iterable object Ex: Array, String
+		
+	for .. in
+		
+		Loop over enumerable string properties of an Object, including inherited enumerable properties
+		
+	do .. while
+		
+		It allows a singular iteration even if the loop condition is not met at all
