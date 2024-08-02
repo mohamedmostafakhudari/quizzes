@@ -1,0 +1,10 @@
+1 - T
+2 - T
+3 - T
+4 - F (( it can has both abstract methods and implemented methods unlike an interface ))
+5 - F (( the last param will override the first param because params are simply local variables for a funcation ))
+6 - F (( yes multiple inheritance is not allowed in js but a class may implement multiple interfaces ))
+7 - T
+8 - T
+9 - T (( providing that both are non-static positioned ))
+10 - T
